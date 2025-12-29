@@ -5,8 +5,9 @@ function App() {
   const [health, setHealth] = useState<string>('Loading...');
 
   useEffect(() => {
-    // Example API call to the backend
-    axios.get('http://localhost:8000/health')
+    // API call to the backend using environment variable
+    const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+    axios.get(`${apiUrl}/health`)
       .then(res => setHealth(res.data.status))
       .catch(() => setHealth('Error connecting to backend'));
   }, []);
