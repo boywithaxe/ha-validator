@@ -9,6 +9,6 @@ class Entity(BaseModel):
 class Automation(BaseModel):
     id: str
     alias: Optional[str] = None
-    trigger: Union[List[Dict[str, Any]], Dict[str, Any]]
-    condition: Union[List[Dict[str, Any]], Dict[str, Any]] = []
-    action: Union[List[Dict[str, Any]], Dict[str, Any]]
+    trigger: Optional[Union[List[Dict[str, Any]], Dict[str, Any]]] = None
+    condition: Optional[Union[List[Dict[str, Any]], Dict[str, Any]]] = None
+    action: Optional[Union[List[Dict[str, Any]], Dict[str, Any]]] = None

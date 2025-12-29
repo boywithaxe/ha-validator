@@ -1,0 +1,382 @@
+[
+  {
+    "id": "1719605623417",
+    "alias": "[Kitchen] Turn On Light On Motion"
+  },
+  {
+    "id": "1719605965411",
+    "alias": "[Downstairs Washroom] Turn On Light On Motion"
+  },
+  {
+    "id": "1719613448730",
+    "alias": "[Bedroom] Walkin light on Motion"
+  },
+  {
+    "id": "1719668438383",
+    "alias": "[Office] Normal Lights on Switch"
+  },
+  {
+    "id": "1719751916689",
+    "alias": "[Bedroom Washroom] Turn Off Light with Switch"
+  },
+  {
+    "id": "1719751956184",
+    "alias": "[Bedroom Washroom] Turn On Light with Switch"
+  },
+  {
+    "id": "1719755446274",
+    "alias": "[Hallway] Turn on Understair Light On Motion"
+  },
+  {
+    "id": "1719760058712",
+    "alias": "[Study] Lights on Motion"
+  },
+  {
+    "id": "1719764214550",
+    "alias": "[Kitchen] Turn Light Off on no motion "
+  },
+  {
+    "id": "1719778185798",
+    "alias": "[Study] Lights off on no motion"
+  },
+  {
+    "id": "1719781258209",
+    "alias": "[Study] Turn Off Lights on no Occupancy"
+  },
+  {
+    "id": "1719953601660",
+    "alias": "[Everywhere] Close all Covers"
+  },
+  {
+    "id": "1719954095243",
+    "alias": "[Sitting Room] Open covers on entry"
+  },
+  {
+    "id": "1720120578649",
+    "alias": "[Sitting Room] Turn On Lamps on Entrance"
+  },
+  {
+    "id": "1720120748655",
+    "alias": "[Sitting Room]  Turn off Lights on No Occupancy"
+  },
+  {
+    "id": "1720286885724",
+    "alias": "[Downstairs Washroom] Turn off Lights on no occupancy"
+  },
+  {
+    "id": "1720994861134",
+    "alias": "[Bedroom walk-in] Turn off light"
+  },
+  {
+    "id": "1721026970292",
+    "alias": "[Study] Open covers on Entry"
+  },
+  {
+    "id": "1721048009065",
+    "alias": "[Maintenance] Washing Machine Finished"
+  },
+  {
+    "id": "1721048087579",
+    "alias": "[Maintenance] Washing Machine Started"
+  },
+  {
+    "id": "1723833016118",
+    "alias": "[Sitting Room] turn on lamps with switch"
+  },
+  {
+    "id": "1723833090459",
+    "alias": "[Sitting room] turn off lamps with switch"
+  },
+  {
+    "id": "1726389785877",
+    "alias": "[Dining Room] Dining Room Leak Detected"
+  },
+  {
+    "id": "1728408148215",
+    "alias": "Restart Z2M"
+  },
+  {
+    "id": "1728582816899",
+    "alias": "Turn Off heating in Study"
+  },
+  {
+    "id": "1729162477212",
+    "alias": "[Button] Toggle Outside Lights"
+  },
+  {
+    "id": "1729167421339",
+    "alias": "[Landing] Turn Stair Light On"
+  },
+  {
+    "id": "1729167507237",
+    "alias": "[Landing] Turn Stair light off"
+  },
+  {
+    "id": "1730365338313",
+    "alias": "[Outside] Turn on Outside light when door is open after sunset"
+  },
+  {
+    "id": "1730375057042",
+    "alias": "[Front Porch] Turn on lights at sundown"
+  },
+  {
+    "id": "1730375159916",
+    "alias": "[Front Porch] Turn off lights at midnight"
+  },
+  {
+    "id": "1730375369890",
+    "alias": "[Front Porch] Switch to white lights"
+  },
+  {
+    "id": "1732465913461",
+    "alias": "[\ud83c\udf21\ufe0f Heating] Bedroom - Turn ON"
+  },
+  {
+    "id": "1732466063444",
+    "alias": "[\ud83c\udf21\ufe0f Heating] Bedroom - Turn OFF"
+  },
+  {
+    "id": "1732466114428",
+    "alias": "[\ud83c\udf21\ufe0f Heating] Sitting Room - Turn OFF"
+  },
+  {
+    "id": "1732466461362",
+    "alias": "[\ud83c\udf21\ufe0f Heating] Sitting Room - Turn ON"
+  },
+  {
+    "id": "1732466560288",
+    "alias": "[\ud83c\udf21\ufe0f Heating] Study - Turn ON"
+  },
+  {
+    "id": "1732466641026",
+    "alias": "[\ud83c\udf21\ufe0f Heating] Study - Turn OFF"
+  },
+  {
+    "id": "1732653434442",
+    "alias": "[\ud83c\udf21\ufe0f Heating] Guest Room - Turn ON"
+  },
+  {
+    "id": "1732653626657",
+    "alias": "[\ud83c\udf21\ufe0f Heating] Guest Room - Turn OFF"
+  },
+  {
+    "id": "1734297978571",
+    "alias": "[\ud83c\udf84] Turn Off Christmas Tree"
+  },
+  {
+    "id": "1735480570743",
+    "alias": "[Office] Normal Lights off Switch"
+  },
+  {
+    "id": "1735481991041",
+    "alias": "[Office] All Lights On"
+  },
+  {
+    "id": "1735485817758",
+    "alias": "[Office] Heat on"
+  },
+  {
+    "id": "1735660268554",
+    "alias": "[Office] Close Blind"
+  },
+  {
+    "id": "1735660308627",
+    "alias": "[Office] Open Blind"
+  },
+  {
+    "id": "1735661140391",
+    "alias": "[Office] All Lights Switch"
+  },
+  {
+    "id": "1735661807759",
+    "alias": "[Office] Normal Light Switch"
+  },
+  {
+    "id": "1735664395597",
+    "alias": "[Sean] TTS Test"
+  },
+  {
+    "id": "1737028042805",
+    "alias": "[Bedroom Washroom] Turn on Light"
+  },
+  {
+    "id": "1737028088853",
+    "alias": "[Bedroom Washroom] Turn Light Off"
+  },
+  {
+    "id": "1738606279910",
+    "alias": "[Office] Light Bright"
+  },
+  {
+    "id": "1738607162663",
+    "alias": "[Office] Light Dim"
+  },
+  {
+    "id": "1742378006670",
+    "alias": "[\u2699\ufe0e] Reload Smarththings every hour"
+  },
+  {
+    "id": "1744282215021",
+    "alias": "[Sitting Room] Toggle Sitting Room TV Backlight"
+  },
+  {
+    "id": "1747843477966",
+    "alias": "[Sitting Room] Turn On Lamps on Entrance (Flexible)"
+  },
+  {
+    "id": "1753954448389",
+    "alias": "Notify when washer stops as galdos"
+  },
+  {
+    "id": "1760423850325",
+    "alias": "[Bedroom] Good Morning"
+  },
+  {
+    "id": "1762791360125",
+    "alias": "[Bedroom] Turn On Lights on Entrance"
+  },
+  {
+    "id": "1762791718809",
+    "alias": "[Bedroom Washroom] Turn on Light on Entrance"
+  },
+  {
+    "id": "1762792323291",
+    "alias": "[Bedroom] Turn Off lights on no occupancy"
+  },
+  {
+    "id": "1762794615359",
+    "alias": "[Bathroom] Turn Off Bath Time"
+  },
+  {
+    "id": "1764449881680",
+    "alias": "Low Battery Alert"
+  },
+  {
+    "id": "1764450756374",
+    "alias": "[Landing] Stair Light Auto On/Off"
+  },
+  {
+    "id": "1764580523658",
+    "alias": "[Bedroom] Turn on lights when leaving washroom"
+  },
+  {
+    "id": "1764681690830",
+    "alias": "[Living Room] Toggle lamps"
+  },
+  {
+    "id": "1765024634085",
+    "alias": "[Study] TV Backlight Control"
+  },
+  {
+    "id": "1765134985358",
+    "alias": "[Outside] Garden Christmas Tree Schedule"
+  },
+  {
+    "id": "1765135177829",
+    "alias": "[Outside] Turn off tree"
+  },
+  {
+    "id": "1765231443020",
+    "alias": "Turn off fox "
+  },
+  {
+    "id": "1765277756871",
+    "alias": "Storm Protection - Turn Off Entertainment Systems on Grid Loss"
+  },
+  {
+    "id": "1765277763712",
+    "alias": "Storm Protection - Restore Entertainment Systems on Grid Return"
+  },
+  {
+    "id": "1765306799624",
+    "alias": "[\ud83d\udd25] Sitting Room Detect Stove ON"
+  },
+  {
+    "id": "1765306807908",
+    "alias": "[\ud83d\udd25 Stove] Sitting Room - Detect ON"
+  },
+  {
+    "id": "1765306814308",
+    "alias": "[\u2744\ufe0f Stove] Sitting Room - Detect OFF"
+  },
+  {
+    "id": "1765306995240",
+    "alias": "[\ud83d\udd25\u2192\u2744\ufe0f Stove] Sitting Room - Turn OFF Heater"
+  },
+  {
+    "id": "1765481525494",
+    "alias": "Turn on hallway lamp 30 min after sunset"
+  },
+  {
+    "id": "1766351181018",
+    "alias": "[Kitchen] Motion Light Control"
+  },
+  {
+    "id": "1766419105442",
+    "alias": "Turn on Light in Utility"
+  },
+  {
+    "id": "1766616793775",
+    "alias": "[\ud83c\udf84] Christmas Routines - Turn ON"
+  },
+  {
+    "id": "1766616798227",
+    "alias": "[\ud83c\udf84] Christmas Routines - Turn OFF"
+  },
+  {
+    "id": "automation_sigen_plant_run_mode_input_selector_action",
+    "alias": "sigen plant run mode input selector action"
+  },
+  {
+    "id": "automation_sigen_plant_run_mode_input_selector_update",
+    "alias": "sigen plant run mode input selector update"
+  },
+  {
+    "id": "automation_sigen_remote_ems_input_selector_action",
+    "alias": "sigen remote EMS input selector action"
+  },
+  {
+    "id": "automation_sigen_remote_ems_input_selector_update",
+    "alias": "sigen remote EMS input selector update"
+  },
+  {
+    "id": "automation_sigen_remote_ems_control_mode_input_selector_action",
+    "alias": "sigen remote EMS control mode input selector action"
+  },
+  {
+    "id": "automation_sigen_remote_ems_control_mode_input_selector_update",
+    "alias": "sigen remote EMS control mode input selector update"
+  },
+  {
+    "id": "automation_sigen_indenpendent_phase_power_control_input_selector_action",
+    "alias": "sigen indenpendent phase power control input selector action"
+  },
+  {
+    "id": "automation_sigen_indenpendent_phase_power_control_input_selector_update",
+    "alias": "sigen indenpendent phase power control input selector update"
+  },
+  {
+    "id": "automation_sigen_ess_max_charging_limit_input_text_action",
+    "alias": "sigen ESS max charging limit input text action"
+  },
+  {
+    "id": "automation_sigen_ess_max_charging_limit_input_text_update",
+    "alias": "sigen ESS max charging limit input text update"
+  },
+  {
+    "id": "automation_sigen_ess_max_discharging_limit_input_text_action",
+    "alias": "sigen ESS max discharging limit input text action"
+  },
+  {
+    "id": "automation_sigen_ess_max_discharging_limit_input_text_update",
+    "alias": "sigen ESS max discharging limit input text update"
+  },
+  {
+    "id": "automation_sigen_pv_max_power_limit_input_text_action",
+    "alias": "sigen PV max power limit input text action"
+  },
+  {
+    "id": "automation_sigen_pv_max_power_limit_input_text_update",
+    "alias": "sigen PV max power limit input text update"
+  }
+]
