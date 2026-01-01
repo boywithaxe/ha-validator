@@ -6,3 +6,5 @@ requests
 httpx
 websockets
 networkx
+numpy
+scipy

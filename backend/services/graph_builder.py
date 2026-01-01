@@ -53,3 +53,45 @@ class SystemGraph:
                     self.graph.add_edge(auto.id, ent_id, relation="action")
                     
         return self.graph
+
+    def to_react_flow_format(self) -> Dict[str, List[Dict[str, Any]]]:
+        """
+        Convert NetworkX graph to React Flow JSON format.
+        """
+        if self.graph.number_of_nodes() == 0:
+            return {"nodes": [], "edges": []}
+            
+        # 1. Compute Layout (scale positions)
+        pos = nx.spring_layout(self.graph, k=0.15, iterations=50)
+        
+        nodes = []
+        for node_id, coords in pos.items():
+            # Get node attributes
+            attrs = self.graph.nodes[node_id]
+            
+            # Format Node
+            nodes.append({
+                "id": node_id,
+                "data": {
+                    "label": attrs.get("alias") or node_id, # Use alias if available, else ID
+                    "type": attrs.get("type", "default"),
+                    "details": attrs
+                },
+                "position": {
+                    "x": coords[0] * 2000, # Scale up for better visibility
+                    "y": coords[1] * 2000 
+                },
+                "type": "default" # React Flow node type
+            })
+            
+        edges = []
+        for u, v, data in self.graph.edges(data=True):
+            edges.append({
+                "id": f"e-{u}-{v}",
+                "source": u,
+                "target": v,
+                "label": data.get("relation"),
+                "animated": True if data.get("relation") == "trigger" else False
+            })
+            
+        return {"nodes": nodes, "edges": edges}

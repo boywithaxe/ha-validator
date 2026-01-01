@@ -7,6 +7,7 @@ from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 from config import settings
 from services.ha_client import HomeAssistantClient
+from services.graph_builder import SystemGraph
 from schemas import Entity, Automation
 from pydantic import ValidationError
 
@@ -112,19 +113,56 @@ async def ingest_data():
             except ValidationError as e:
                  logger.warning(f"Skipping invalid automation {auto_data.get('id', 'unknown')}: {e}")
 
+        # Build Graph
+        graph_builder = SystemGraph()
+        graph_builder.build(valid_entities, valid_automations_list)
+        graph_data = graph_builder.to_react_flow_format()
+
         return {
             "status": "success",
             "entity_count": len(valid_entities),
             "automation_count": len(valid_automations_list),
             "data": {
                 "entities": [e.model_dump() for e in valid_entities],
-                "automations": [a.model_dump() for a in valid_automations_list]
+                "automations": [a.model_dump() for a in valid_automations_list],
+                "graph": graph_data
             }
         }
 
     except Exception as e:
         logger.error(f"Ingestion failed: {e}")
         raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/graph")
+async def get_graph():
+    # Helper to re-fetch and build graph on demand
+    # In a real app we might cache this or use the last ingested data.
+    # For now, we'll re-run a quick fetch (or just states fallback) to build it.
+    client = HomeAssistantClient()
+    try:
+        states = await client.fetch_states() # Fallback source
+        # We need to map these to entities/automations
+        entities = []
+        automations = []
+        for s in states:
+            if s['entity_id'].startswith('automation.'):
+                 automations.append(Automation(
+                     id=s['attributes'].get('id', s['entity_id']),
+                     alias=s['attributes'].get('friendly_name')
+                 ))
+            entities.append(Entity(
+                id=s['entity_id'], 
+                state=s['state'], 
+                attributes=s['attributes']
+            ))
+            
+        graph_builder = SystemGraph()
+        graph_builder.build(entities, automations)
+        return graph_builder.to_react_flow_format()
+    except Exception as e:
+        logger.error(f"Graph fetch failed: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
 
 if __name__ == "__main__":
     uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)

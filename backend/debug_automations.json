@@ -12,10 +12,6 @@
     "alias": "[Bedroom] Walkin light on Motion"
   },
   {
-    "id": "1719668438383",
-    "alias": "[Office] Normal Lights on Switch"
-  },
-  {
     "id": "1719751916689",
     "alias": "[Bedroom Washroom] Turn Off Light with Switch"
   },
@@ -164,12 +160,8 @@
     "alias": "[\ud83c\udf84] Turn Off Christmas Tree"
   },
   {
-    "id": "1735480570743",
-    "alias": "[Office] Normal Lights off Switch"
-  },
-  {
     "id": "1735481991041",
-    "alias": "[Office] All Lights On"
+    "alias": "[Office] Big Light On"
   },
   {
     "id": "1735485817758",
@@ -185,11 +177,7 @@
   },
   {
     "id": "1735661140391",
-    "alias": "[Office] All Lights Switch"
-  },
-  {
-    "id": "1735661807759",
-    "alias": "[Office] Normal Light Switch"
+    "alias": "[Office] Lights On"
   },
   {
     "id": "1735664395597",
@@ -202,14 +190,6 @@
   {
     "id": "1737028088853",
     "alias": "[Bedroom Washroom] Turn Light Off"
-  },
-  {
-    "id": "1738606279910",
-    "alias": "[Office] Light Bright"
-  },
-  {
-    "id": "1738607162663",
-    "alias": "[Office] Light Dim"
   },
   {
     "id": "1742378006670",
@@ -324,6 +304,14 @@
     "alias": "[\ud83c\udf84] Christmas Routines - Turn OFF"
   },
   {
+    "id": "1767110965745",
+    "alias": "[Office] Big Light Off"
+  },
+  {
+    "id": "1767111163117",
+    "alias": "[Office] Lights off"
+  },
+  {
     "id": "automation_sigen_plant_run_mode_input_selector_action",
     "alias": "sigen plant run mode input selector action"
   },
@@ -378,5 +366,9 @@
   {
     "id": "automation_sigen_pv_max_power_limit_input_text_update",
     "alias": "sigen PV max power limit input text update"
+  },
+  {
+    "id": "1767206339374",
+    "alias": "[Office] Charge Blinds"
   }
 ]

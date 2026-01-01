@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import GraphCanvas from './GraphCanvas';
 
 function App() {
   const [health, setHealth] = useState<string>('Loading...');
@@ -41,6 +42,9 @@ function App() {
             Dashboard
           </a>
           <a href="#" className="block px-6 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">
+            System Graph
+          </a>
+          <a href="#" className="block px-6 py-2 text-gray-700 hover:bg-gray-200 hover:text-blue-600">
             Settings
           </a>
         </nav>
@@ -76,7 +80,7 @@ function App() {
             </div>
           )}
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
             <div className="p-6 bg-white rounded-lg shadow">
               <h3 className="text-lg font-medium text-gray-900">Total Entities</h3>
               <p className="mt-2 text-3xl font-bold text-blue-600">
@@ -89,32 +93,12 @@ function App() {
                 {syncData ? syncData.automation_count : '-'}
               </p>
             </div>
-            <div className="p-6 bg-white rounded-lg shadow">
-              <h3 className="text-lg font-medium text-gray-900">Statistic 3</h3>
-              <p className="mt-2 text-3xl font-bold text-purple-600">89</p>
-            </div>
           </div>
 
-          <div className="mt-8">
-            <div className="p-6 bg-white rounded-lg shadow">
-              <h3 className="text-lg font-medium text-gray-900 mb-4">Recent Activity</h3>
-              <div className="border-t border-gray-200">
-                <ul className="divide-y divide-gray-200">
-                  {[1, 2, 3].map((item) => (
-                    <li key={item} className="py-4">
-                      <div className="flex space-x-3">
-                        <div className="flex-1 space-y-1">
-                          <div className="flex items-center justify-between">
-                            <h3 className="text-sm font-medium">Activity {item}</h3>
-                            <p className="text-sm text-gray-500">Just now</p>
-                          </div>
-                          <p className="text-sm text-gray-500">Description of activity {item} goes here.</p>
-                        </div>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+          <div className="mb-8">
+            <h3 className="text-lg font-medium text-gray-900 mb-4">System Graph</h3>
+            <div className="w-full">
+              <GraphCanvas />
             </div>
           </div>
         </main>
