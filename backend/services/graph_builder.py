@@ -51,6 +51,26 @@ class SystemGraph:
                 action_entities = self._find_entity_ids(auto.action)
                 for ent_id in action_entities:
                     self.graph.add_edge(auto.id, ent_id, relation="action")
+            
+            # Process Related (Generic Fallback)
+            if auto.related:
+                for related_id in auto.related:
+                    # We don't know direction, but usually it's input/output.
+                    # For visualization, just linking them is enough.
+                    # We'll treat them as "related" edge.
+                    # To avoid duplicates if trigger/action exists (unlikely in this fallback), we could check.
+                    if not self.graph.has_edge(auto.id, related_id) and not self.graph.has_edge(related_id, auto.id):
+                         self.graph.add_edge(related_id, auto.id, relation="related") # Default direction? Or undirected?
+                         # Let's assume Entity -> Automation for now, or just make it bidirectional?
+                         # For simplicity and preventing cycles in layout, let's just do Entity -> Auto (like trigger)
+                         # But wait, actions are Auto -> Entity.
+                         # Since we don't know, maybe we just add one way?
+                         pass
+                    
+                    # Actually, let's just add it as "related" from Entity -> Automation implies dependency?
+                    # Or Automation -> Entity implies impact?
+                    # Let's add Entity -> Automation to keep it consistent with "inputs".
+                    self.graph.add_edge(related_id, auto.id, relation="related")
                     
         return self.graph
 

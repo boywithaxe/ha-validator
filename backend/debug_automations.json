@@ -1,374 +1,612 @@
 [
   {
     "id": "1719605623417",
-    "alias": "[Kitchen] Turn On Light On Motion"
+    "alias": "[Kitchen] Turn On Light On Motion",
+    "entity_id": "automation.kitchen_turn_on_light_on_motion",
+    "related": []
   },
   {
     "id": "1719605965411",
-    "alias": "[Downstairs Washroom] Turn On Light On Motion"
+    "alias": "[Downstairs Washroom] Turn On Light On Motion",
+    "entity_id": "automation.downstairs_washroom",
+    "related": []
   },
   {
     "id": "1719613448730",
-    "alias": "[Bedroom] Walkin light on Motion"
+    "alias": "[Bedroom] Walkin light on Motion",
+    "entity_id": "automation.bedroom_walkin_light_on_motion",
+    "related": []
   },
   {
     "id": "1719751916689",
-    "alias": "[Bedroom Washroom] Turn Off Light with Switch"
+    "alias": "[Bedroom Washroom] Turn Off Light with Switch",
+    "entity_id": "automation.bedroom_washroom_turn_off_light_with_switch",
+    "related": []
   },
   {
     "id": "1719751956184",
-    "alias": "[Bedroom Washroom] Turn On Light with Switch"
+    "alias": "[Bedroom Washroom] Turn On Light with Switch",
+    "entity_id": "automation.bedroom_washroom_turn_on_light_with_switch",
+    "related": []
   },
   {
     "id": "1719755446274",
-    "alias": "[Hallway] Turn on Understair Light On Motion"
+    "alias": "[Hallway] Turn on Understair Light On Motion",
+    "entity_id": "automation.hallway_turn_on_understair_light_on_motion",
+    "related": []
   },
   {
     "id": "1719760058712",
-    "alias": "[Study] Lights on Motion"
+    "alias": "[Study] Lights on Motion",
+    "entity_id": "automation.study_lights_on_mottion",
+    "related": []
   },
   {
     "id": "1719764214550",
-    "alias": "[Kitchen] Turn Light Off on no motion "
+    "alias": "[Kitchen] Turn Light Off on no motion ",
+    "entity_id": "automation.kitchen_turn_light_off_on_no_motion",
+    "related": []
   },
   {
     "id": "1719778185798",
-    "alias": "[Study] Lights off on no motion"
+    "alias": "[Study] Lights off on no motion",
+    "entity_id": "automation.study_lights_off_on_no_motion",
+    "related": []
   },
   {
     "id": "1719781258209",
-    "alias": "[Study] Turn Off Lights on no Occupancy"
+    "alias": "[Study] Turn Off Lights on no Occupancy",
+    "entity_id": "automation.study_turn_off_lights_on_no_occupancy",
+    "related": []
   },
   {
     "id": "1719953601660",
-    "alias": "[Everywhere] Close all Covers"
+    "alias": "[Everywhere] Close all Covers",
+    "entity_id": "automation.everywhere_close_all_covers",
+    "related": []
   },
   {
     "id": "1719954095243",
-    "alias": "[Sitting Room] Open covers on entry"
+    "alias": "[Sitting Room] Open covers on entry",
+    "entity_id": "automation.sitting_room_open_covers_on_entry",
+    "related": []
   },
   {
     "id": "1720120578649",
-    "alias": "[Sitting Room] Turn On Lamps on Entrance"
+    "alias": "[Sitting Room] Turn On Lamps on Entrance",
+    "entity_id": "automation.sitting_room_turn_on_lamps_on_entrance",
+    "related": []
   },
   {
     "id": "1720120748655",
-    "alias": "[Sitting Room]  Turn off Lights on No Occupancy"
+    "alias": "[Sitting Room]  Turn off Lights on No Occupancy",
+    "entity_id": "automation.sitting_room_turn_of_lights_on_no_occupancy",
+    "related": []
   },
   {
     "id": "1720286885724",
-    "alias": "[Downstairs Washroom] Turn off Lights on no occupancy"
+    "alias": "[Downstairs Washroom] Turn off Lights on no occupancy",
+    "entity_id": "automation.downstairs_washroom_turn_off_lights_on_no_occupancy",
+    "related": []
   },
   {
     "id": "1720994861134",
-    "alias": "[Bedroom walk-in] Turn off light"
+    "alias": "[Bedroom walk-in] Turn off light",
+    "entity_id": "automation.bedroom_walk_in_turn_off_light",
+    "related": []
   },
   {
     "id": "1721026970292",
-    "alias": "[Study] Open covers on Entry"
+    "alias": "[Study] Open covers on Entry",
+    "entity_id": "automation.study_open_covers_on_entry",
+    "related": []
   },
   {
     "id": "1721048009065",
-    "alias": "[Maintenance] Washing Machine Finished"
+    "alias": "[Maintenance] Washing Machine Finished",
+    "entity_id": "automation.maintenance_washing_machine_finished",
+    "related": []
   },
   {
     "id": "1721048087579",
-    "alias": "[Maintenance] Washing Machine Started"
+    "alias": "[Maintenance] Washing Machine Started",
+    "entity_id": "automation.maintenance_washing_machine_started",
+    "related": []
   },
   {
     "id": "1723833016118",
-    "alias": "[Sitting Room] turn on lamps with switch"
+    "alias": "[Sitting Room] turn on lamps with switch",
+    "entity_id": "automation.sitting_room_turn_on_lamps_with_switch",
+    "related": []
   },
   {
     "id": "1723833090459",
-    "alias": "[Sitting room] turn off lamps with switch"
+    "alias": "[Sitting room] turn off lamps with switch",
+    "entity_id": "automation.sitting_room_turn_off_lamps_with_switch",
+    "related": []
   },
   {
     "id": "1726389785877",
-    "alias": "[Dining Room] Dining Room Leak Detected"
+    "alias": "[Dining Room] Dining Room Leak Detected",
+    "entity_id": "automation.dining_room_dining_room_leak_detected",
+    "related": []
   },
   {
     "id": "1728408148215",
-    "alias": "Restart Z2M"
+    "alias": "Restart Z2M",
+    "entity_id": "automation.restart_z2m",
+    "related": []
   },
   {
     "id": "1728582816899",
-    "alias": "Turn Off heating in Study"
+    "alias": "Turn Off heating in Study",
+    "entity_id": "automation.turn_off_heating_in_study",
+    "related": []
   },
   {
     "id": "1729162477212",
-    "alias": "[Button] Toggle Outside Lights"
+    "alias": "[Button] Toggle Outside Lights",
+    "entity_id": "automation.button_toggle_outside_lights",
+    "related": []
   },
   {
     "id": "1729167421339",
-    "alias": "[Landing] Turn Stair Light On"
+    "alias": "[Landing] Turn Stair Light On",
+    "entity_id": "automation.landing_turn_stair_light_on",
+    "related": [
+      "landing"
+    ]
   },
   {
     "id": "1729167507237",
-    "alias": "[Landing] Turn Stair light off"
+    "alias": "[Landing] Turn Stair light off",
+    "entity_id": "automation.landing_turn_stair_light_off",
+    "related": [
+      "landing"
+    ]
   },
   {
     "id": "1730365338313",
-    "alias": "[Outside] Turn on Outside light when door is open after sunset"
+    "alias": "[Outside] Turn on Outside light when door is open after sunset",
+    "entity_id": "automation.outside_turn_on_outside_light_when_door_is_open_after_sunset",
+    "related": []
   },
   {
     "id": "1730375057042",
-    "alias": "[Front Porch] Turn on lights at sundown"
+    "alias": "[Front Porch] Turn on lights at sundown",
+    "entity_id": "automation.front_porch_turn_on_lights_at_sundown",
+    "related": []
   },
   {
     "id": "1730375159916",
-    "alias": "[Front Porch] Turn off lights at midnight"
+    "alias": "[Front Porch] Turn off lights at midnight",
+    "entity_id": "automation.front_porch_turn_off_lights_at_10pm",
+    "related": []
   },
   {
     "id": "1730375369890",
-    "alias": "[Front Porch] Switch to white lights"
+    "alias": "[Front Porch] Switch to white lights",
+    "entity_id": "automation.front_porch_switch_to_white_lights",
+    "related": []
   },
   {
     "id": "1732465913461",
-    "alias": "[\ud83c\udf21\ufe0f Heating] Bedroom - Turn ON"
+    "alias": "[\ud83c\udf21\ufe0f Heating] Bedroom - Turn ON",
+    "entity_id": "automation.bedroom_turn_headint_on",
+    "related": [
+      "bedroom"
+    ]
   },
   {
     "id": "1732466063444",
-    "alias": "[\ud83c\udf21\ufe0f Heating] Bedroom - Turn OFF"
+    "alias": "[\ud83c\udf21\ufe0f Heating] Bedroom - Turn OFF",
+    "entity_id": "automation.bedroom_turn_heating_off",
+    "related": [
+      "bedroom"
+    ]
   },
   {
     "id": "1732466114428",
-    "alias": "[\ud83c\udf21\ufe0f Heating] Sitting Room - Turn OFF"
+    "alias": "[\ud83c\udf21\ufe0f Heating] Sitting Room - Turn OFF",
+    "entity_id": "automation.sitting_room_turn_heating_off",
+    "related": [
+      "sitting_room"
+    ]
   },
   {
     "id": "1732466461362",
-    "alias": "[\ud83c\udf21\ufe0f Heating] Sitting Room - Turn ON"
+    "alias": "[\ud83c\udf21\ufe0f Heating] Sitting Room - Turn ON",
+    "entity_id": "automation.sitting_room_turn_on_heating",
+    "related": [
+      "sitting_room"
+    ]
   },
   {
     "id": "1732466560288",
-    "alias": "[\ud83c\udf21\ufe0f Heating] Study - Turn ON"
+    "alias": "[\ud83c\udf21\ufe0f Heating] Study - Turn ON",
+    "entity_id": "automation.study_turn_on_heating",
+    "related": [
+      "study"
+    ]
   },
   {
     "id": "1732466641026",
-    "alias": "[\ud83c\udf21\ufe0f Heating] Study - Turn OFF"
+    "alias": "[\ud83c\udf21\ufe0f Heating] Study - Turn OFF",
+    "entity_id": "automation.study_turn_off_heating",
+    "related": [
+      "study"
+    ]
   },
   {
     "id": "1732653434442",
-    "alias": "[\ud83c\udf21\ufe0f Heating] Guest Room - Turn ON"
+    "alias": "[\ud83c\udf21\ufe0f Heating] Guest Room - Turn ON",
+    "entity_id": "automation.turn_on_heating_in_gues_toom_when_occupied",
+    "related": [
+      "guest_room"
+    ]
   },
   {
     "id": "1732653626657",
-    "alias": "[\ud83c\udf21\ufe0f Heating] Guest Room - Turn OFF"
+    "alias": "[\ud83c\udf21\ufe0f Heating] Guest Room - Turn OFF",
+    "entity_id": "automation.guest_room_turn_off_heating",
+    "related": [
+      "guest_room"
+    ]
   },
   {
     "id": "1734297978571",
-    "alias": "[\ud83c\udf84] Turn Off Christmas Tree"
+    "alias": "[\ud83c\udf84] Turn Off Christmas Tree",
+    "entity_id": "automation.turn_off_christmas_tree",
+    "related": []
   },
   {
     "id": "1735481991041",
-    "alias": "[Office] Big Light On"
+    "alias": "[Office] Big Light On",
+    "entity_id": "automation.office_all_lights_on",
+    "related": [
+      "seans_office"
+    ]
   },
   {
     "id": "1735485817758",
-    "alias": "[Office] Heat on"
+    "alias": "[Office] Heat on",
+    "entity_id": "automation.office_heat_on",
+    "related": []
   },
   {
     "id": "1735660268554",
-    "alias": "[Office] Close Blind"
+    "alias": "[Office] Close Blind",
+    "entity_id": "automation.office_close_blind",
+    "related": []
   },
   {
     "id": "1735660308627",
-    "alias": "[Office] Open Blind"
+    "alias": "[Office] Open Blind",
+    "entity_id": "automation.office_open_blind",
+    "related": []
   },
   {
     "id": "1735661140391",
-    "alias": "[Office] Lights On"
+    "alias": "[Office] Lights On",
+    "entity_id": "automation.office_new_lights_on",
+    "related": [
+      "seans_office"
+    ]
   },
   {
     "id": "1735664395597",
-    "alias": "[Sean] TTS Test"
+    "alias": "[Sean] TTS Test",
+    "entity_id": "automation.sean_tts_test",
+    "related": []
   },
   {
     "id": "1737028042805",
-    "alias": "[Bedroom Washroom] Turn on Light"
+    "alias": "[Bedroom Washroom] Turn on Light",
+    "entity_id": "automation.bedroom_washroom_turn_on_light",
+    "related": []
   },
   {
     "id": "1737028088853",
-    "alias": "[Bedroom Washroom] Turn Light Off"
+    "alias": "[Bedroom Washroom] Turn Light Off",
+    "entity_id": "automation.bedroom_washroom_turn_light_off",
+    "related": []
   },
   {
     "id": "1742378006670",
-    "alias": "[\u2699\ufe0e] Reload Smarththings every hour"
+    "alias": "[\u2699\ufe0e] Reload Smarththings every hour",
+    "entity_id": "automation.reload_smarththings_every_hour",
+    "related": []
   },
   {
     "id": "1744282215021",
-    "alias": "[Sitting Room] Toggle Sitting Room TV Backlight"
+    "alias": "[Sitting Room] Toggle Sitting Room TV Backlight",
+    "entity_id": "automation.sitting_room_toggle_sitting_room_tv_backlight",
+    "related": []
   },
   {
     "id": "1747843477966",
-    "alias": "[Sitting Room] Turn On Lamps on Entrance (Flexible)"
+    "alias": "[Sitting Room] Turn On Lamps on Entrance (Flexible)",
+    "entity_id": "automation.sitting_room_turn_on_lamps_on_entrance_test",
+    "related": [
+      "test"
+    ]
   },
   {
     "id": "1753954448389",
-    "alias": "Notify when washer stops as galdos"
+    "alias": "Notify when washer stops as galdos",
+    "entity_id": "automation.notify_when_washer_stops",
+    "related": []
   },
   {
     "id": "1760423850325",
-    "alias": "[Bedroom] Good Morning"
+    "alias": "[Bedroom] Good Morning",
+    "entity_id": "automation.bedroom_turn_on_tripod_lamp",
+    "related": []
   },
   {
     "id": "1762791360125",
-    "alias": "[Bedroom] Turn On Lights on Entrance"
+    "alias": "[Bedroom] Turn On Lights on Entrance",
+    "entity_id": "automation.bedroom_turn_on_lights_on_entrance",
+    "related": [
+      "bedroom"
+    ]
   },
   {
     "id": "1762791718809",
-    "alias": "[Bedroom Washroom] Turn on Light on Entrance"
+    "alias": "[Bedroom Washroom] Turn on Light on Entrance",
+    "entity_id": "automation.bedroom_washroom_turn_on_light_on_entrance",
+    "related": [
+      "bedroom_washroom"
+    ]
   },
   {
     "id": "1762792323291",
-    "alias": "[Bedroom] Turn Off lights on no occupancy"
+    "alias": "[Bedroom] Turn Off lights on no occupancy",
+    "entity_id": "automation.bedroom_turn_off_lights_on_no_occupancy",
+    "related": [
+      "bedroom"
+    ]
   },
   {
     "id": "1762794615359",
-    "alias": "[Bathroom] Turn Off Bath Time"
+    "alias": "[Bathroom] Turn Off Bath Time",
+    "entity_id": "automation.bathroom_turn_off_bath_time",
+    "related": []
   },
   {
     "id": "1764449881680",
-    "alias": "Low Battery Alert"
+    "alias": "Low Battery Alert",
+    "entity_id": "automation.low_battery_alert",
+    "related": []
   },
   {
     "id": "1764450756374",
-    "alias": "[Landing] Stair Light Auto On/Off"
+    "alias": "[Landing] Stair Light Auto On/Off",
+    "entity_id": "automation.landing_stair_light_auto_on_off",
+    "related": [
+      "landing"
+    ]
   },
   {
     "id": "1764580523658",
-    "alias": "[Bedroom] Turn on lights when leaving washroom"
+    "alias": "[Bedroom] Turn on lights when leaving washroom",
+    "entity_id": "automation.bedroom_turn_on_lights_when_leaving_washroom",
+    "related": []
   },
   {
     "id": "1764681690830",
-    "alias": "[Living Room] Toggle lamps"
+    "alias": "[Living Room] Toggle lamps",
+    "entity_id": "automation.living_room_toggle_lamps",
+    "related": [
+      "living_room"
+    ]
   },
   {
     "id": "1765024634085",
-    "alias": "[Study] TV Backlight Control"
+    "alias": "[Study] TV Backlight Control",
+    "entity_id": "automation.study_tv_backlight_control",
+    "related": []
   },
   {
     "id": "1765134985358",
-    "alias": "[Outside] Garden Christmas Tree Schedule"
+    "alias": "[Outside] Garden Christmas Tree Schedule",
+    "entity_id": "automation.outside_turn_on_tree",
+    "related": [
+      "outside"
+    ]
   },
   {
     "id": "1765135177829",
-    "alias": "[Outside] Turn off tree"
+    "alias": "[Outside] Turn off tree",
+    "entity_id": "automation.outside_turn_off_tree",
+    "related": [
+      "outside"
+    ]
   },
   {
     "id": "1765231443020",
-    "alias": "Turn off fox "
+    "alias": "Turn off fox ",
+    "entity_id": "automation.turn_off_fox",
+    "related": [
+      "sitting_room"
+    ]
   },
   {
     "id": "1765277756871",
-    "alias": "Storm Protection - Turn Off Entertainment Systems on Grid Loss"
+    "alias": "Storm Protection - Turn Off Entertainment Systems on Grid Loss",
+    "entity_id": "automation.storm_protection_turn_off_entertainment_systems_on_grid_loss",
+    "related": []
   },
   {
     "id": "1765277763712",
-    "alias": "Storm Protection - Restore Entertainment Systems on Grid Return"
+    "alias": "Storm Protection - Restore Entertainment Systems on Grid Return",
+    "entity_id": "automation.storm_protection_restore_entertainment_systems_on_grid_return",
+    "related": []
   },
   {
     "id": "1765306799624",
-    "alias": "[\ud83d\udd25] Sitting Room Detect Stove ON"
+    "alias": "[\ud83d\udd25] Sitting Room Detect Stove ON",
+    "entity_id": "automation.sitting_room_detect_stove_on",
+    "related": []
   },
   {
     "id": "1765306807908",
-    "alias": "[\ud83d\udd25 Stove] Sitting Room - Detect ON"
+    "alias": "[\ud83d\udd25 Stove] Sitting Room - Detect ON",
+    "entity_id": "automation.sitting_room_stove_on_detection",
+    "related": []
   },
   {
     "id": "1765306814308",
-    "alias": "[\u2744\ufe0f Stove] Sitting Room - Detect OFF"
+    "alias": "[\u2744\ufe0f Stove] Sitting Room - Detect OFF",
+    "entity_id": "automation.sitting_room_stove_off_detection",
+    "related": []
   },
   {
     "id": "1765306995240",
-    "alias": "[\ud83d\udd25\u2192\u2744\ufe0f Stove] Sitting Room - Turn OFF Heater"
+    "alias": "[\ud83d\udd25\u2192\u2744\ufe0f Stove] Sitting Room - Turn OFF Heater",
+    "entity_id": "automation.sitting_room_turn_off_heater_when_stove_detected",
+    "related": []
   },
   {
     "id": "1765481525494",
-    "alias": "Turn on hallway lamp 30 min after sunset"
+    "alias": "Turn on hallway lamp 30 min after sunset",
+    "entity_id": "automation.turn_on_hallway_lamp_30_min_after_sunset",
+    "related": []
   },
   {
     "id": "1766351181018",
-    "alias": "[Kitchen] Motion Light Control"
+    "alias": "[Kitchen] Motion Light Control",
+    "entity_id": "automation.kitchen_motion_light_control",
+    "related": [
+      "kitchen"
+    ]
   },
   {
     "id": "1766419105442",
-    "alias": "Turn on Light in Utility"
+    "alias": "Turn on Light in Utility",
+    "entity_id": "automation.turn_on_light_in_utility",
+    "related": [
+      "utility"
+    ]
   },
   {
     "id": "1766616793775",
-    "alias": "[\ud83c\udf84] Christmas Routines - Turn ON"
+    "alias": "[\ud83c\udf84] Christmas Routines - Turn ON",
+    "entity_id": "automation.christmas_routines_turn_on",
+    "related": []
   },
   {
     "id": "1766616798227",
-    "alias": "[\ud83c\udf84] Christmas Routines - Turn OFF"
+    "alias": "[\ud83c\udf84] Christmas Routines - Turn OFF",
+    "entity_id": "automation.christmas_routines_turn_off",
+    "related": []
   },
   {
     "id": "1767110965745",
-    "alias": "[Office] Big Light Off"
+    "alias": "[Office] Big Light Off",
+    "entity_id": "automation.office_big_light_off",
+    "related": [
+      "seans_office"
+    ]
   },
   {
     "id": "1767111163117",
-    "alias": "[Office] Lights off"
+    "alias": "[Office] Lights off",
+    "entity_id": "automation.office_lights_off",
+    "related": [
+      "seans_office"
+    ]
   },
   {
     "id": "automation_sigen_plant_run_mode_input_selector_action",
-    "alias": "sigen plant run mode input selector action"
+    "alias": "sigen plant run mode input selector action",
+    "entity_id": "automation.sigen_plant_run_mode_input_selector_action",
+    "related": []
   },
   {
     "id": "automation_sigen_plant_run_mode_input_selector_update",
-    "alias": "sigen plant run mode input selector update"
+    "alias": "sigen plant run mode input selector update",
+    "entity_id": "automation.sigen_plant_run_mode_input_selector_update",
+    "related": []
   },
   {
     "id": "automation_sigen_remote_ems_input_selector_action",
-    "alias": "sigen remote EMS input selector action"
+    "alias": "sigen remote EMS input selector action",
+    "entity_id": "automation.sigen_remote_ems_input_selector_action",
+    "related": []
   },
   {
     "id": "automation_sigen_remote_ems_input_selector_update",
-    "alias": "sigen remote EMS input selector update"
+    "alias": "sigen remote EMS input selector update",
+    "entity_id": "automation.sigen_remote_ems_input_selector_update",
+    "related": []
   },
   {
     "id": "automation_sigen_remote_ems_control_mode_input_selector_action",
-    "alias": "sigen remote EMS control mode input selector action"
+    "alias": "sigen remote EMS control mode input selector action",
+    "entity_id": "automation.sigen_remote_ems_control_mode_input_selector_action",
+    "related": []
   },
   {
     "id": "automation_sigen_remote_ems_control_mode_input_selector_update",
-    "alias": "sigen remote EMS control mode input selector update"
+    "alias": "sigen remote EMS control mode input selector update",
+    "entity_id": "automation.sigen_remote_ems_control_mode_input_selector_update",
+    "related": []
   },
   {
     "id": "automation_sigen_indenpendent_phase_power_control_input_selector_action",
-    "alias": "sigen indenpendent phase power control input selector action"
+    "alias": "sigen indenpendent phase power control input selector action",
+    "entity_id": "automation.sigen_indenpendent_phase_power_control_input_selector_action",
+    "related": []
   },
   {
     "id": "automation_sigen_indenpendent_phase_power_control_input_selector_update",
-    "alias": "sigen indenpendent phase power control input selector update"
+    "alias": "sigen indenpendent phase power control input selector update",
+    "entity_id": "automation.sigen_indenpendent_phase_power_control_input_selector_update",
+    "related": []
   },
   {
     "id": "automation_sigen_ess_max_charging_limit_input_text_action",
-    "alias": "sigen ESS max charging limit input text action"
+    "alias": "sigen ESS max charging limit input text action",
+    "entity_id": "automation.sigen_ess_max_charging_limit_input_text_action",
+    "related": []
   },
   {
     "id": "automation_sigen_ess_max_charging_limit_input_text_update",
-    "alias": "sigen ESS max charging limit input text update"
+    "alias": "sigen ESS max charging limit input text update",
+    "entity_id": "automation.sigen_ess_max_charging_limit_input_text_update",
+    "related": []
   },
   {
     "id": "automation_sigen_ess_max_discharging_limit_input_text_action",
-    "alias": "sigen ESS max discharging limit input text action"
+    "alias": "sigen ESS max discharging limit input text action",
+    "entity_id": "automation.sigen_ess_max_discharging_limit_input_text_action",
+    "related": []
   },
   {
     "id": "automation_sigen_ess_max_discharging_limit_input_text_update",
-    "alias": "sigen ESS max discharging limit input text update"
+    "alias": "sigen ESS max discharging limit input text update",
+    "entity_id": "automation.sigen_ess_max_discharging_limit_input_text_update",
+    "related": []
   },
   {
     "id": "automation_sigen_pv_max_power_limit_input_text_action",
-    "alias": "sigen PV max power limit input text action"
+    "alias": "sigen PV max power limit input text action",
+    "entity_id": "automation.sigen_pv_max_power_limit_input_text_action",
+    "related": []
   },
   {
     "id": "automation_sigen_pv_max_power_limit_input_text_update",
-    "alias": "sigen PV max power limit input text update"
+    "alias": "sigen PV max power limit input text update",
+    "entity_id": "automation.sigen_pv_max_power_limit_input_text_update",
+    "related": []
   },
   {
     "id": "1767206339374",
-    "alias": "[Office] Charge Blinds"
+    "alias": "[Office] Charge Blinds",
+    "entity_id": "automation.office_charge_blinds",
+    "related": [
+      "seans_office"
+    ]
   }
 ]

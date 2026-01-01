@@ -136,28 +136,50 @@ async def ingest_data():
 @app.get("/api/graph")
 async def get_graph():
     # Helper to re-fetch and build graph on demand
-    # In a real app we might cache this or use the last ingested data.
-    # For now, we'll re-run a quick fetch (or just states fallback) to build it.
     client = HomeAssistantClient()
     try:
-        states = await client.fetch_states() # Fallback source
-        # We need to map these to entities/automations
-        entities = []
-        automations = []
-        for s in states:
-            if s['entity_id'].startswith('automation.'):
-                 automations.append(Automation(
-                     id=s['attributes'].get('id', s['entity_id']),
-                     alias=s['attributes'].get('friendly_name')
-                 ))
-            entities.append(Entity(
-                id=s['entity_id'], 
-                state=s['state'], 
-                attributes=s['attributes']
-            ))
-            
+        # Fetch data in parallel
+        states_task = client.fetch_states()
+        automations_task = client.fetch_automations()
+        
+        results = await asyncio.gather(states_task, automations_task, return_exceptions=True)
+        
+        raw_states = results[0]
+        raw_automations = results[1]
+        
+        if isinstance(raw_states, Exception):
+            raise HTTPException(status_code=500, detail=f"Failed to fetch states: {str(raw_states)}")
+        
+        # Valid states -> Entities
+        valid_entities: List[Entity] = []
+        for state_data in raw_states:
+            try:
+                if "entity_id" in state_data and "id" not in state_data:
+                    state_data["id"] = state_data["entity_id"]
+                valid_entities.append(Entity(**state_data))
+            except ValidationError:
+                continue
+
+        # Valid automations
+        valid_automations: List[Automation] = []
+        if not isinstance(raw_automations, Exception):
+            for auto_data in raw_automations:
+                try:
+                    valid_automations.append(Automation(**auto_data))
+                except ValidationError as e:
+                    logger.warning(f"Skipping invalid automation in graph view: {e}")
+        
+        # Fallback if WS failed: try to find them in states (will miss edges but show nodes)
+        if not valid_automations and isinstance(raw_states, list):
+             for s in raw_states:
+                if s.get('entity_id', '').startswith('automation.'):
+                     valid_automations.append(Automation(
+                         id=s.get('attributes', {}).get('id', s['entity_id']),
+                         alias=s.get('attributes', {}).get('friendly_name')
+                     ))
+
         graph_builder = SystemGraph()
-        graph_builder.build(entities, automations)
+        graph_builder.build(valid_entities, valid_automations)
         return graph_builder.to_react_flow_format()
     except Exception as e:
         logger.error(f"Graph fetch failed: {e}")
